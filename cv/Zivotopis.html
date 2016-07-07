@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<title>Životopis</title>
+
+<style type="text/css" media="screen">
+	td {
+		border: 3px solid green;
+		color: black;
+	}
+	
+	table
+	{
+		background-image: url('backg.jpg');
+		background-repeat: repeat;
+	}
+	html, body {
+		background-color: #29293d;
+		color: #cccccc;
+	}
+	h1,h2,h3 {color: #00e600;}
+	
+	footer > div{
+		background-color: #0080ff;
+	}
+
+	div > a:hover, a:active, a:link, a:visited {
+	    color: black;
+	}
+
+	footer > a:hover, a:active, a:link, a:visited {
+	    color: yellow;
+	}
+	section > header {color: #00e600;}
+</style>
+<style type="text/css" media="print">
+	td {
+		border-top: 1px solid black;
+		color: black;
+	}
+	
+	html, body {
+		color: black;
+	}
+	h1,h2,h3 {color: black;}
+	
+	footer > div{
+		background-color: #0080ff;
+	}
+
+	div > a:hover, a:active, a:link, a:visited {
+	    color: black;
+	    text-decoration: none;
+	}
+
+	footer {
+	    display: none;
+	}
+</style>
+
+<style type="text/css" media="screen,print">
+	html, body {
+		font-family: Verdana;
+	}
+	
+	h1,h2,h3 {
+		font-family: "Comic Sans MS";
+	}
+	
+	footer > div{
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.datum {
+		font-weight: bold;
+		font-style: italic;
+	}
+	table {
+	    border-collapse: collapse;
+	}
+	
+	.cen td {
+			text-align: center;
+			min-width: 75px;
+	}
+
+	footer > div{
+		margin-top: 15px;
+		text-align: center;
+	}
+	
+	section > header, section > div {
+	    display: inline-block;
+	}
+	
+	section > header{
+	    margin-right:0.5rem;
+	    width: 13.5rem;
+	    vertical-align: top;
+	    text-align: right;
+	}
+	section > div> div > span, section > div> div > img {
+		vertical-align: middle;
+		padding: 2px;
+	}
+	
+	.cen {
+	display: inline-block;
+	} 
+	main {
+		width: 70em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+</style>
+
+
+</head>
+<body>
+<main>
+<header>
+<h1 id="top">Europass životopis</h1>
+<img src="user-icon-6.png" alt="cant show image" title="niekto" width="48"/> 
+</header>
+<section>
+	<header>
+		<h2>Osobné a kontaktné údaje</h2>
+	</header>
+	<div>
+		<div title="Meno a priezvisko"><img src="Person-Male-Light-icon.png" alt="bubo sa nezobrazil"/><span>Bubo Bubby</span></div>
+		<div title="Adresa"><img src="home-icon.png" alt="bubo sa nezobrazil"/><span>Strašidelná 35, Rajčina 955 61</span></div>
+		<div title="e-mail"><img src="At-Mail-icon.png" alt="bubo sa nezobrazil"/><span><a href="mailto:foooboo&#064;gmail.com">foooboo&#064;gmail.com</a></span></div>
+		<div title="Telefón"><img src="phone-icon.png" alt="bubo sa nezobrazil"/><span>00639223555281</span></div>
+	</div>		
+</section>
+
+<section>
+	<header><h2>Prax</h2></header>
+	<div>
+		<ul>
+			<li>
+				<h3>Junior application developer</h3>
+				<strong>Pracovná náplň:</strong><br/> 
+				<ul>
+					<li>Learn Java</li>
+					<li>Learn SQL</li>
+					<li>Learn HTML &amp; CSS &amp; &amp; JavaScript</li>
+				</ul>
+			</li>
+			<li>
+				<h3>Administratívny pracovník</h3>
+				<strong>Pracovná náplň:</strong><br/> 
+				<ul>
+					<li>Zákaznícke obejdnávky (reklamácie)</li>
+					<li>Starostlivosť o zákazníkov</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</section>	
+
+<section>
+	<header><h2>Vzdelanie</h2></header>
+	<div>
+		<ol>
+			<li>
+				<span class="datum">dátum od - do</span> Škola
+			</li>
+			<li>
+				<span class="datum">dátum od - do</span> Škola
+			</li>
+		</ol>
+	
+		<table class="cen">
+			<thead>
+				<tr><td></td><td colspan=2>Poruzemenie</td><td colspan=2>Hovorené</td><td>Písané</td></tr>
+				<tr><td>Jazyk</td><td>Počúvanie</td><td>Čítanie</td><td>Interakcia</td><td>Prejav</td><td>&nbsp;</td></tr>
+			</thead>
+			<tbody>
+				<tr><td>Anglicky</td><td>Super</td><td>Ide to</td><td>Asi</td><td>Áno</td><td>Možno</td></tr>
+				<tr><td>Rusky</td><td>DA</td><td>I mnoga</td><td>DA</td><td>DA</td><td>nemnogo</td></tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<footer>
+	<hr />
+	<div><a href="#top">Topuj</a></div>
+</footer>
+</main>
+</body>
+</html>
