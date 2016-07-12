@@ -1,0 +1,51 @@
+html {
+/*    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif; */
+    font-style: normal; 
+    font-weight: normal;
+    text-align: justify; 
+    color: black;
+    background-color: white;
+}
+
+body > header
+{
+    border-bottom: 0.2rem solid royalblue;
+}
+
+body > header> img
+{
+    height: 35%;
+    width: 35%;
+
+    display: block;
+    position: relative;
+    float: right;
+}
+
+#top h2
+{
+    margin-left: 3rem;
+    font-variant: small-caps;
+}
+
+#top h1 
+{
+    font-family: "Comic sans MS";
+}
+
+nav, footer, #pocas, #nasvystup, #pocas5, #anketa {
+    display: none;
+} 
+
+article > h2 {
+    text-align:center;
+}
+
+#pocasShmu > img {
+    display: inline-block;
+}
+
+#pocasShmu {
+        text-align: center; 
+}
+

@@ -1,0 +1,110 @@
+@media only screen and (min-width: 600px){
+    body{
+        min-width: 30rem;
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 599px){
+    body{
+        width: 100%;
+    }
+}
+
+main{margin-top: 1rem;}
+
+html {
+/*    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif; */
+    font-style: normal; 
+    font-weight: normal;
+    text-align: justify; 
+    color: white;
+    background-color: #333333
+}
+
+body > header
+{
+    border-bottom: 0.2rem solid royalblue;
+}
+
+body > header> img
+{
+    height: 35%;
+    width: 35%;
+
+    display: block;
+    position: relative;
+    float: right;
+}
+
+input, textarea, select {
+    background-color: #331122;
+}
+
+#top h2
+{
+    margin-left: 3rem;
+    font-variant: small-caps;
+    color: dodgerblue;
+}
+
+#top h1 
+{
+    color: deepskyblue;
+    font-family: "Comic sans MS";
+}
+
+nav > a:link, nav > a:visited, nav > a:hover, nav > a:active
+{
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    color: white;
+    text-decoration: none;
+} 
+
+nav > a:hover, nav > a:active
+{
+    font-size: 1.7rem;
+    color: lightpink;
+} 
+
+article > h2 {
+    text-align:center;
+    color: #12ff36;
+}
+
+article > p > b, article > p > i, article > p >u {
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding:0.2rem;
+    background-color: black;
+}
+
+article > p > a:link, article > p > a:visited, article > p > a:hover, article > p > a:active
+{
+    font-size: 0.6em;
+    display: inline-block;
+    border-radius: 0.2rem;
+    padding:0.2rem;
+    background-color: #666666;
+    color: lightseagreen;
+}
+
+#pocas5 > table td, #pocas5 > table th {
+    border: 1px solid blue;
+    padding: 0.5em;
+    text-align: center;     
+}
+
+#pocas5 tr:hover {
+    background-color: lightslategray; 
+}
+
+#pocasShmu > img, #pocas5 > table{
+    display: inline-block;
+}
+
+#pocasShmu, #pocas5, #komenty {
+        text-align: center; 
+}

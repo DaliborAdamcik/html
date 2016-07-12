@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>..:Šimonka:..</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css"  media="screen" />
+    <link rel="stylesheet" href="css/print.css"  media="print" />
+</head>
+<body>
+<header id="top">
+    <img src="media/titlemag.png" alt="obrazok simonky nie je k dispozicii" />
+    <h1>..&#47;:Šimonka:&#92;..</h1>
+    <h2>...::strecha Slánskych vrchov</h2> 
+</header>
+<nav>
+    <a href="#info">Základné info</a>
+    <a href="#turistika">Turistika</a>
+    <a href="#nasvystup">Náš výstup</a>
+    <a href="#pocas">Aktuálne počasie</a>
+    <a href="#pocas5">Predpoveď 5 dní</a>
+    <a href="#pocasShmu">Model počasia SHMU</a>
+    <a href="#anketa">Anketa</a>
+
+</nav>
+<main>
+    <article id="info">
+        <h2>Informácie o kopci :)</h2>
+        <p><b>Šimonka (1 092,0 m n. m.)</b> je najvyšší vrch <u>Slanských vrchov</u>. Nachádza sa v severovýchodnej časti pohoria, juhovýchodne od obce <i>Zlatá Baňa</i>.</p>
+
+        <p>Šimonka je tiež najvyšším bodom okresu Vranov nad Topľou.</p>
+
+        <p>Vrcholovú časť zaberá <u>národná prírodná rezervácia Šimonka</u>, vyhlásená v roku 1950 na výmere 33,52 ha s najvyšším <i>5. stupňom ochrany prírody</i>, ktorá je najstaršou v okrese Vranov nad Topľou. Tá má za cieľ zachovať a chrániť andezitový vrchol s balvanovými sutinami a pralesovitou bučinou, resp. jaseňovou javorinou (vyše 200-ročný porast).</p>
+
+        <p>Na andezitovom vrchole Šimonky sa nachádza malá nezalesnená plocha s vystupujúcou skalkou, odkiaľ je vynikajúci panoramatický výhľad na sever, východ a západ. Za dobrých podmienok je vidno Vysoké Tatry a vrch Nízkych Tatier – Kráľovu hoľu (1 946,1 m n. m.). Nechýba tu drevený vrcholový kríž a osadený turistický smerovník, na ktorom je umiestnená schránka s vrcholovou knihou.</p>
+
+        <p>Západnými svahmi prechádza červená turistická značka červene značená Medzinárodná diaľková turistická trasa E3, vedúca hlavným hrebeňom Slanských vrchov.</p>
+        <p><a href="https://sk.wikipedia.org/wiki/%C5%A0imonka_(vrch)" target="_blank">zdroj údajov</a></p>
+    </article>
+
+    <article id="turistika">
+        <h2>Turistika</h2>
+        <p>Šimonka je častým turistickým cieľom. Viažu sa k nej tri sedlá. Na severozápade je to sedlo Červená mláka (855 m n. m.), na východe sedlo Obracaná studňa (845 m n. m.) a na juhu sedlo Grimov laz (943 m n. m.).</p>
+        <p>Od sedla Grimov laz vedie po strmom a kamenistom teréne na vrchol Šimonky žltá turistická značka žltá turistická značka. Výstup po žltej trvá cca 30 minút. Počas výstupu po žltá turistická značka žltej turistickej značke sa naskytá pohľad na najvyššiu stavbu na Slovensku – rádiový a televízny vysielač Dubník vysoký 318 metrov.</p>
+        <p>Najľahší je výstup z obce Zlatá Baňa po zelená turistická značka zelenej a následne žltá turistická značka žltej turistickej značke.</p>
+    </article>
+
+    <article id="nasvystup">
+        <h2>Naše zdolávanie vrcholu</h2>
+        <p>Viac informácí o našom výstupe na vrchol šimonka nájdete na stránke <a href="http://www.dalibor.sk/vylet_simonka/" target="_blank">info výlet</a>.</p>
+        <p>Zdolali sme ju v rokoch (<i>vždy 30.XII</i>): </p><ul><li>2006</li><li>2007</li><li>2008</li><li>2009</li><li>2013</li><li>2015</li></ul>
+    </article>
+
+    <article id="pocas"><h2>Nefunguje javascript alebo daco je v keli</h2></article>
+    <article id="pocas5"><h2>Nefunguje javascript alebo daco je v keli</h2></article>
+    <article id="pocasShmu"><h2>Model Aladin SHMU</h2>
+        <!--// zdroj: http://www.dalibor.sk/vylet_simonka/-->
+        <script>
+        var shmudat = new Date();
+        var shmutries = 0;
+        Number.prototype.pad = function(size) {var s = String(this); while (s.length < (size || 2)) {s = "0" + s;} return s;}
+        function loadSHMU() {
+            var idregion="31527"; // presov 31379
+            if(shmutries++<4)
+            document.getElementById("pocasie").src=
+            "http://www.shmu.sk/data/datanwp/v2/meteogram/al-meteogram_"+idregion+"-"+shmudat.getFullYear()+(shmudat.getMonth()+1).pad()+shmudat.getDate().pad()+"-"+
+            (shmudat.getHours() - shmudat.getHours() % 6).pad()+"00-nwp-.png";
+
+            shmudat.setTime(shmudat.valueOf()-21600000);
+        }
+        </script>
+        <img id="pocasie" src="HTTP://icantload.somenonexist.badvery/img.png" onerror="loadSHMU();" alt="nevieme nacitat shmu"/>
+    </article>
+
+    <article id="anketa">
+        <h2>Anketa</h2>
+        <input type="button" id="hlasujzas" value="Hlasovať znovu" />
+        <form id="ank" method="post" action="simonka.html#novalid">
+            <input type="text" name="odpovedal" id="odpovedal" size="50"  maxlength="100" pattern="\S[\S\s]*" title="Vaše meno" placeholder="Vaše meno" required/><br>
+
+            <input type="number" name="vek" id="vek" size="50"  min="8" max="99" title="Váš vek" placeholder="Váš vek" required/><br>
+            <input type="radio" name="pohlavie" id="pohlavie1" value="muž"/>Muž <i>alebo</i> <input type="radio" name="pohlavie2" id="pohlavie" value="žena"/>Žena<br>
+            <input type="checkbox" name="paci" id="paci"/>Táto stránka sa mi páči<br>    
+            <label for="rok">Na Šimonke som bol v roku:</label>
+            <select id="rok" name="rok" multiple>
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2013</option>
+                <option>2015</option>
+            </select>
+
+            <br>
+            <label for="content">Váš komentár k stránke a tak podobne:</label><br>
+            <textarea name="content" id="content" spellcheck="true" lang="sk" cols="52" rows="10" required title="Váš komentár k stránke"></textarea>
+            <br>
+            <button type="submit">Odoslať anketu</button>
+        </form>
+        <div id="komenty">
+        </div>
+            
+    </article>
+</main>
+<footer>
+    <a href="#top">Topuj</a>
+</footer>
+
+<script id="tmpFore" type="text/template">
+    <h2>Aktuálna predpoveď počasia pre *{{name}}* ({{#sys}} {{country}} {{/sys}})</h2>
+    {{#main}}
+        <div>Aktuálna teplota: {{temp}} °C</div> 
+        <div>Denná min teplota: {{temp_min}} °C</div> 
+        <div>Denná max teplota: {{temp_max}} °C</div> 
+        <div>Vlhkosť: {{humidity}} %</div> 
+        <div>Tlak: {{pressure}} hpa</div> 
+    {{/main}}
+    <div>Súčastné počasie:
+        {{#weather}}
+            <span title="{{description}}">{{main}}</span>
+        {{/weather}}
+    </div>
+    <div>Oblačnosť: {{#clouds}} {{all}}% {{/clouds}}</div>
+    <div>Vietor: {{#wind}} {{speed}}m/s smer {{deg}} stupňov {{/wind}}</div>
+</script>
+<script id="tmpFore5" type="text/template">
+    <h2>Predpoveď počasia pre {{#city}}*{{name}}* ({{country}}){{/city}} na 5 dní</h2>
+    <table>
+    <thead><tr><th>Deň</th><th>Teplota</th><th>Vlhkosť</th><th>Tlak</th><th>Počasie</th>
+    <th>Oblačnosť</th><th>Sila<br>vetra</th><th>Smer<br/>vetra</th><th>Dážď</th><th>Sneh</th>
+
+    </tr></thead>
+    <tbody>{{#list}}<tr>
+        <td>{{dt_txt}}</td>
+        {{#main}}
+            <td title="Teplota">{{temp}} °C</td> 
+            <td title="Vlhkosť">{{humidity}} %</td> 
+            <td title="Tlak">{{pressure}} hpa</td> 
+        {{/main}}
+        <td title="Počasie">
+            {{#weather}}
+                <span title="{{description}}">{{main}}</span>
+            {{/weather}}
+        </td>
+        <td title="Oblačnosť">{{#clouds}} {{all}}% {{/clouds}}</td>
+        {{#wind}} 
+            <td title="Sila vetra">{{speed}}m/s</td>
+            <td title="Smer vetra">{{deg}} °</td>
+        {{/wind}}
+        <td title="Dážď">{{#rain}}{{3h}}mm{{/rain}}{{^rain}}Nie{{/rain}}</td>
+        <td title="Sneh">{{#snow}}{{3h}}mm{{/snow}}{{^snow}}Nie{{/snow}}</td>
+    </tr>{{/list}}</tbody>
+    </table>
+</script>
+<script id="tmpAnk" type="text/template">
+    <div style="background-color: #000066; display: inline-block; border-radius: 1em; padding: 0 2em 2em 2em;">        
+        <h3>Anketa od {{odpovedal}}</h3>
+        <table>
+        <tr><td>Meno</td><td>{{odpovedal}}</td></tr>
+        <tr><td>Pohlavie</td><td>{{pohlavie}}</td></tr>
+        <tr><td>Vek</td><td>{{vek}}</td></tr>
+        <tr><td>Stránka sa páči</td><td>{{paci}}</td></tr>
+        <tr><td>Výstup</td><td>{{#rok}}* {{.}} {{/rok}}</td></tr>
+        <tr><td>Poznámka</td><td>{{content}}</td></tr>
+        </table>
+    </div>
+</script>
+
+<!-- Vlozenie jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+<!-- Vlozenie Mustache -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+<script>window.Mustache || document.write('<script src="js/mustache.min.js"><\/script>')</script>
+
+<script src="js/fores.js"></script>
+<script src="js/ankcom.js"></script>
+
+</body>
+</html>
