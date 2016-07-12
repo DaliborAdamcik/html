@@ -1,1 +1,1 @@
-# html-cv
+# Súbory z kurzu HTML
